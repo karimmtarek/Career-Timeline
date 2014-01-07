@@ -24,7 +24,7 @@ Once Middleman is installed, go to "Career Timeline" directory using Terminal/Co
 Once you make sure your Middleman is installed and you can preview `index.html.erb` in the browser at: `http://localhost:4567/`, now if you like the layout and you think its going  to workout for your content you can open `data/career_timeline.yml` and start replacing the content with your content.
 
 ## Help
-If you need any help please post your question [there](http://forum.middlemanapp.com), I'll try to get back to you ASAP.
+If you need any help please post your question [there](https://github.com/karimmtarek/Career-Timeline/issues), as and issue I'll try to get back to you ASAP.
 
 ## License
 
