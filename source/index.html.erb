@@ -1,0 +1,39 @@
+<%
+  #Data sources
+  data_source = data.career_timeline
+  data_source_skillset = data.career_timeline.skillset
+  data_source_toolbox = data.career_timeline.toolbox
+
+%>
+<!-- Add your site or application content here -->
+<div id="wraper">
+    <header class="clearfix">
+        <%= partial(:"layouts/partials/personal_info") %>
+    </header>
+    <section id="career_timeline" class="clearfix">
+        <h1>Career Timeline</h1>
+
+        <!-- milestones loop -->
+            <%= partial(:"layouts/partials/milestone_loop_with_more_info") %>
+
+    </section>
+    <div class="clearfix">
+        <section class="extra skillset">
+            <h2>Skillset</h2>
+            <ul>
+                <%= partial(:"layouts/partials/extra_section", :locals => { :data_source => data_source_skillset }) %>
+            </ul>
+        </section>
+        <section class="extra toolbox fr">
+            <h2>Toolbox</h2>
+            <ul>
+                <%= partial(:"layouts/partials/extra_section", :locals => { :data_source => data_source_toolbox }) %>
+            </ul>
+        </section>
+
+        <!-- footer -->
+        <%= partial(:"layouts/partials/footer") %>
+
+    </div>
+    <div class="vline"></div>
+</div>

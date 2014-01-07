@@ -1,0 +1,19 @@
+<%
+    name        = data.career_timeline.personal_info[0].name
+    bio         = data.career_timeline.personal_info[1].bio
+    email       = data.career_timeline.personal_info[2].email
+    phone       = data.career_timeline.personal_info[3].phone
+    website     = data.career_timeline.personal_info[4].website
+    website_url = data.career_timeline.personal_info[5].website_url
+    city        = data.career_timeline.personal_info[6].city
+%>
+
+<h1><%= name %></h1>
+<p><%= bio %></p>
+
+<ul>
+    <li class="email"><span class="entypo-mail"></span><a href="mailto:<%= email %>"><%= email %></a></li>
+    <li class="phone"><span class="entypo-phone"></span><%= phone %></li>
+    <li class="website"><span class="entypo-globe" class="entypo-phone"></span><a href="<%= website_url %>"><%= website %></a></li>
+    <li class="location"><span class="entypo-location"></span><%= city %></li>
+</ul>

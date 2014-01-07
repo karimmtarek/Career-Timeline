@@ -1,0 +1,62 @@
+    <!-- get the number of career milestones -->
+<%
+    milestones_length   = data.career_timeline.career_timeline.length
+%>
+
+<!-- check if there is any career milestones or not, if not then an error message will be displayed -->
+<% if milestones_length > 0 %>
+
+    <ul class="timeline">
+    <%  milestones_length -= 1
+        (0..milestones_length).each do |i| %>
+    <li>
+        <%
+            title           = data.career_timeline.career_timeline[i].milestone[0].title
+            company         = data.career_timeline.career_timeline[i].milestone[1].company
+            city            = data.career_timeline.career_timeline[i].milestone[2].city
+            period          = data.career_timeline.career_timeline[i].milestone[3].period
+            job_brief       = data.career_timeline.career_timeline[i].milestone[4].job_brief
+            job_description = data.career_timeline.career_timeline[i].milestone[5].job_description
+
+            job_brief_length = job_brief.length
+            job_description_length = job_description.length
+        %>
+        <div class="title">
+            <!-- check if there is a job brief or not, to add the more info button or not -->
+            <% if job_brief_length > 0 %>
+            <h2 class="pr1"><%= title %>
+                <a class="modalLink entypo-info" href="#modal<%= i %>" title="Job description"></a>
+            </h2>
+            <% else %>
+            <h2><%= title %></h2>
+            <% end %>
+
+
+            <p><%= company %></p>
+        </div>
+        <p class="from_to">
+            <strong><%= city %></strong>
+            <span><%= period %></span>
+        </p>
+        <div class='arrow'></div>
+        <div class='circle'></div>
+        <!-- modal for job description -->
+        <div id="modal<%= i %>" class="modal">
+            <h2><%= title %><a class="closeBtn entypo-cancel" title="Close"></a></h2>
+            <h3><%= company %></h3>
+            <p><%= job_brief %></p>
+            <!-- get job_description if it exits if not then nothing is going to be displayed -->
+            <% if job_description_length > 0 %>
+                <ul>
+                <% job_description.each do |f| %>
+                  <li><span class="entypo-right-open-big"></span> <%= f %></li>
+                <% end %>
+                </ul>
+            <% end %>
+        </div>
+    </li>
+    <% end %>
+    </ul>
+<% else %>
+    <p>No carrer milestones found.</p>
+<% end %>

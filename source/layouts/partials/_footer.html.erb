@@ -1,0 +1,20 @@
+<%
+    carrer_timeline_Toolbox_length  = data.career_timeline.carrer_timeline_Toolbox.length
+%>
+<footer>
+    <p>
+    <% if carrer_timeline_Toolbox_length > 0 %>
+        The toolbox used to make this happen:
+        <%  carrer_timeline_Toolbox_length -= 1
+            (0..carrer_timeline_Toolbox_length).each do |i| %>
+            <%
+                name = data.career_timeline.carrer_timeline_Toolbox[i].tool[0].name
+                url  = data.career_timeline.carrer_timeline_Toolbox[i].tool[1].url
+            %>
+            <a href="<%= url %>" rel="nofollow"><%= name %></a>
+        <% end %>
+        <br />
+    <% end %>
+    Designed and coded by <strong><a href="http://karimtarek.com">Karim Tarek</a></strong>.
+    </p>
+</footer>

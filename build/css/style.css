@@ -1,0 +1,548 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,300");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+/* line 11, C:/Sites/career-timeline/source/css/style.scss */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-weight: normal; }
+
+/* line 34, C:/Sites/career-timeline/source/css/style.scss */
+.section_heading, #career_timeline h1, .extra h2 {
+  font: normal normal 300 2em/1em "Roboto Slab", serif;
+  background: #34495e;
+  color: white;
+  border-radius: 0.2em;
+  padding: 0.25em 0.3em 0.3em 0.3em; }
+
+/* line 43, C:/Sites/career-timeline/source/css/style.scss */
+h1, h2, h3, p, ul {
+  padding: 0;
+  margin: 0; }
+
+/* line 48, C:/Sites/career-timeline/source/css/style.scss */
+li {
+  list-style: none; }
+
+/* line 52, C:/Sites/career-timeline/source/css/style.scss */
+a {
+  text-decoration: none; }
+
+/* line 56, C:/Sites/career-timeline/source/css/style.scss */
+body {
+  font-family: "Open Sans", sans-serif; }
+
+/* line 61, C:/Sites/career-timeline/source/css/style.scss */
+.pr1 {
+  padding-right: 1em; }
+
+/* line 64, C:/Sites/career-timeline/source/css/style.scss */
+.fr {
+  float: right !important; }
+
+/* line 70, C:/Sites/career-timeline/source/css/style.scss */
+#wraper {
+  margin: 0 auto;
+  padding: 1em 0 0;
+  width: 960px;
+  position: relative; }
+  /* line 76, C:/Sites/career-timeline/source/css/style.scss */
+  #wraper .vline {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    width: 4px;
+    height: 0px;
+    background: #e74c3c;
+    margin-left: -2px; }
+
+/* line 89, C:/Sites/career-timeline/source/css/style.scss */
+header > div {
+  float: left;
+  width: 100%; }
+/* line 93, C:/Sites/career-timeline/source/css/style.scss */
+header h1 {
+  font: normal normal 300 4em/1em "Roboto Slab", serif;
+  color: #34495e;
+  padding: 0;
+  float: left; }
+/* line 102, C:/Sites/career-timeline/source/css/style.scss */
+header p {
+  font: normal normal 300 1em/1.4em "Open Sans", sans-serif;
+  float: right; }
+/* line 109, C:/Sites/career-timeline/source/css/style.scss */
+header ul {
+  width: 100%;
+  float: left;
+  margin: 2em 0 0;
+  padding: 2em 0;
+  border-top: 4px solid #e74c3c; }
+  /* line 115, C:/Sites/career-timeline/source/css/style.scss */
+  header ul li {
+    float: left;
+    color: #34495e;
+    display: block;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1em;
+    margin-right: 1.8em;
+    position: relative;
+    padding-left: 25px; }
+    /* line 126, C:/Sites/career-timeline/source/css/style.scss */
+    header ul li span {
+      font-size: 1em;
+      line-height: 1em;
+      color: #e74c3c;
+      width: 23px;
+      height: 23px;
+      display: inline-block;
+      position: absolute;
+      bottom: -3px;
+      left: 0; }
+  /* line 139, C:/Sites/career-timeline/source/css/style.scss */
+  header ul li:last-child {
+    margin-right: 0;
+    float: right; }
+  /* line 149, C:/Sites/career-timeline/source/css/style.scss */
+  header ul .phone span {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 1.1em; }
+  /* line 155, C:/Sites/career-timeline/source/css/style.scss */
+  header ul .website span {
+    font-size: 0.9em; }
+  /* line 161, C:/Sites/career-timeline/source/css/style.scss */
+  header ul .location span {
+    font-size: 1.3em;
+    line-height: 0.5em;
+    text-align: right; }
+  /* line 167, C:/Sites/career-timeline/source/css/style.scss */
+  header ul a {
+    color: #34495e;
+    text-decoration: none; }
+
+/* line 176, C:/Sites/career-timeline/source/css/style.scss */
+#career_timeline {
+  position: relative; }
+  /* line 178, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline h1 {
+    margin: 0 0 1em 0; }
+  /* line 182, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline ul.timeline {
+    float: left;
+    width: 100%;
+    position: relative; }
+    /* line 186, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline ul.timeline > li {
+      width: 47.5%;
+      height: auto;
+      position: relative;
+      margin: 0 0 2em; }
+    /* line 192, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline ul.timeline > li:nth-child(odd) {
+      float: left;
+      clear: right; }
+      /* line 195, C:/Sites/career-timeline/source/css/style.scss */
+      #career_timeline ul.timeline > li:nth-child(odd) .arrow {
+        border-left: 10px solid #e74c3c;
+        right: -2%; }
+      /* line 199, C:/Sites/career-timeline/source/css/style.scss */
+      #career_timeline ul.timeline > li:nth-child(odd) .circle {
+        right: -7.5%; }
+    /* line 203, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline ul.timeline > li:nth-child(even) {
+      float: right;
+      clear: left; }
+      /* line 206, C:/Sites/career-timeline/source/css/style.scss */
+      #career_timeline ul.timeline > li:nth-child(even) .arrow {
+        border-right: 10px solid #34495e;
+        left: -2%; }
+      /* line 210, C:/Sites/career-timeline/source/css/style.scss */
+      #career_timeline ul.timeline > li:nth-child(even) .circle {
+        left: -7.4%; }
+  /* line 215, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline .title {
+    background: #34495e;
+    color: white;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    float: left;
+    width: 56%;
+    padding: 2%; }
+    /* line 223, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline .title h2 {
+      font-size: 1.2em;
+      font-weight: normal;
+      position: relative; }
+      /* line 227, C:/Sites/career-timeline/source/css/style.scss */
+      #career_timeline .title h2 .modalLink {
+        font-size: 0.65em;
+        line-height: 1.45em;
+        color: white;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 1em; }
+    /* line 243, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline .title p {
+      font-size: 1em;
+      font-weight: 300;
+      font-style: italic; }
+  /* line 249, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline .from_to {
+    background: #e74c3c;
+    color: white;
+    font-size: 1em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    float: left;
+    width: 36%;
+    padding: 2%; }
+    /* line 258, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline .from_to strong {
+      font-weight: bold;
+      font-style: italic;
+      font-size: 1em;
+      display: block; }
+    /* line 264, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline .from_to span {
+      font-weight: 300;
+      font-style: none;
+      font-size: 0.9em; }
+  /* line 270, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline .arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 20%; }
+  /* line 280, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline .circle {
+    width: 12px;
+    height: 12px;
+    border: 4px solid #e74c3c;
+    position: absolute;
+    top: 20%;
+    border-radius: 20px;
+    background: white;
+    z-index: 10; }
+
+/* line 292, C:/Sites/career-timeline/source/css/style.scss */
+.extra {
+  width: 48%;
+  float: left;
+  margin: 2em 0 0 0; }
+  /* line 296, C:/Sites/career-timeline/source/css/style.scss */
+  .extra h2 {
+    margin: 0 0 0.5em 0; }
+  /* line 300, C:/Sites/career-timeline/source/css/style.scss */
+  .extra ul {
+    float: left; }
+  /* line 303, C:/Sites/career-timeline/source/css/style.scss */
+  .extra li {
+    float: left;
+    width: 47%;
+    padding-left: 3%;
+    font: normal normal 300 1em/1.3em "Open Sans", sans-serif;
+    margin-bottom: 0.3em;
+    position: relative; }
+    /* line 310, C:/Sites/career-timeline/source/css/style.scss */
+    .extra li span {
+      font-size: 0.95em;
+      line-height: 1em;
+      color: #e74c3c;
+      position: absolute;
+      top: 4px;
+      left: 0;
+      height: 20px;
+      display: block; }
+
+/* line 323, C:/Sites/career-timeline/source/css/style.scss */
+footer {
+  width: 100%;
+  float: left;
+  margin: 2em 0 0;
+  padding: 2em 0;
+  border-top: 4px solid #e74c3c; }
+  /* line 329, C:/Sites/career-timeline/source/css/style.scss */
+  footer p {
+    color: #666;
+    font-size: 0.9em; }
+  /* line 333, C:/Sites/career-timeline/source/css/style.scss */
+  footer a {
+    color: #e74c3c; }
+    /* line 335, C:/Sites/career-timeline/source/css/style.scss */
+    footer a:hover {
+      text-decoration: underline; }
+
+/* line 343, C:/Sites/career-timeline/source/css/style.scss */
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none; }
+
+/* line 353, C:/Sites/career-timeline/source/css/style.scss */
+.modal {
+  display: none;
+  background: #eee;
+  padding: 1em;
+  overflow: auto;
+  z-index: 1001;
+  position: fixed;
+  width: 400px;
+  min-height: 300px;
+  border-radius: 0.5em; }
+  /* line 363, C:/Sites/career-timeline/source/css/style.scss */
+  .modal .closeBtn {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #e74c3c;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    cursor: pointer;
+    text-align: right; }
+  /* line 377, C:/Sites/career-timeline/source/css/style.scss */
+  .modal h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative; }
+  /* line 382, C:/Sites/career-timeline/source/css/style.scss */
+  .modal h3 {
+    padding: 0 0 1em 0;
+    margin-bottom: 0.5em;
+    border-bottom: 4px solid #e74c3c;
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic; }
+  /* line 390, C:/Sites/career-timeline/source/css/style.scss */
+  .modal p {
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: normal;
+    margin-bottom: 0.5em; }
+  /* line 397, C:/Sites/career-timeline/source/css/style.scss */
+  .modal ul li {
+    width: 94%;
+    font: normal normal 300 0.95em/1.3em "Open Sans", sans-serif;
+    margin-bottom: 0.3em;
+    padding: 0 3%;
+    position: relative; }
+    /* line 403, C:/Sites/career-timeline/source/css/style.scss */
+    .modal ul li span {
+      font-size: 0.95em;
+      line-height: 1em;
+      color: #e74c3c;
+      position: absolute;
+      top: 4px;
+      left: 0;
+      height: 20px;
+      display: block; }
+
+@media only screen and (max-width: 768px) {
+  /* line 424, C:/Sites/career-timeline/source/css/style.scss */
+  #wraper {
+    padding: 3%;
+    width: 94%;
+    position: relative; }
+
+  /* line 430, C:/Sites/career-timeline/source/css/style.scss */
+  header h1 {
+    font-size: 2.9em; }
+  /* line 434, C:/Sites/career-timeline/source/css/style.scss */
+  header p {
+    font-size: 0.8em;
+    line-height: 1.5em; }
+  /* line 440, C:/Sites/career-timeline/source/css/style.scss */
+  header ul {
+    width: 100%;
+    float: left;
+    margin: 1em 0 0;
+    padding: 1em 0;
+    border-top: 4px solid #e74c3c; }
+    /* line 446, C:/Sites/career-timeline/source/css/style.scss */
+    header ul li {
+      font-size: 1em;
+      margin-right: 1.2em;
+      padding-left: 20px; }
+      /* line 450, C:/Sites/career-timeline/source/css/style.scss */
+      header ul li span {
+        width: 17px;
+        height: 17px; }
+
+  /* line 460, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline ul.timeline > li {
+    width: 47%;
+    margin: 0 0 1em 0; }
+  /* line 465, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline ul.timeline > li:nth-child(odd) .circle {
+    right: -9.5%; }
+  /* line 470, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline ul.timeline > li:nth-child(even) .circle {
+    left: -9.2%; }
+  /* line 475, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline .title {
+    width: 60%;
+    padding: 2%; }
+    /* line 478, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline .title h2 {
+      font-size: 1.1em; }
+    /* line 481, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline .title p {
+      font-size: 0.9em; }
+  /* line 485, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline .from_to {
+    font-size: 0.8em;
+    width: 34%;
+    padding-right: 0;
+    line-height: 1.1em; }
+    /* line 493, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline .from_to span {
+      font-size: 0.8em;
+      line-height: 1em; }
+
+  /* line 500, C:/Sites/career-timeline/source/css/style.scss */
+  .extra {
+    width: 48%;
+    float: left;
+    margin: 1em 0 0 0; }
+    /* line 504, C:/Sites/career-timeline/source/css/style.scss */
+    .extra li {
+      font-size: 0.9em; }
+      /* line 506, C:/Sites/career-timeline/source/css/style.scss */
+      .extra li span {
+        top: 3px; }
+
+  /* line 511, C:/Sites/career-timeline/source/css/style.scss */
+  footer {
+    margin: 1em 0 0 0;
+    padding: 1em 0; } }
+@media only screen and (max-width: 480px) {
+  /* line 519, C:/Sites/career-timeline/source/css/style.scss */
+  #wraper {
+    padding: 3%;
+    width: 94%;
+    position: relative; }
+    /* line 523, C:/Sites/career-timeline/source/css/style.scss */
+    #wraper .vline {
+      display: none; }
+
+  /* line 529, C:/Sites/career-timeline/source/css/style.scss */
+  header h1 {
+    float: none;
+    width: 100%; }
+  /* line 533, C:/Sites/career-timeline/source/css/style.scss */
+  header p {
+    float: none;
+    width: 100% !important;
+    padding-top: 0.5em; }
+  /* line 538, C:/Sites/career-timeline/source/css/style.scss */
+  header ul {
+    float: left;
+    margin: 1em 0 0;
+    padding: 1em 0; }
+    /* line 544, C:/Sites/career-timeline/source/css/style.scss */
+    header ul li {
+      float: none;
+      margin: 0 0 0.8em 0; }
+    /* line 548, C:/Sites/career-timeline/source/css/style.scss */
+    header ul li:last-child {
+      margin: 0;
+      float: none; }
+    /* line 553, C:/Sites/career-timeline/source/css/style.scss */
+    header ul .location span {
+      text-align: left; }
+
+  /* line 561, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline h1 {
+    margin: 0 0 0.5em 0; }
+  /* line 564, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline ul.timeline {
+    float: left;
+    width: 100%; }
+    /* line 567, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline ul.timeline > li {
+      width: 100%;
+      height: auto;
+      margin: 0 0 1em 0; }
+    /* line 572, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline ul.timeline > li:nth-child(odd) {
+      float: left;
+      clear: none; }
+    /* line 576, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline ul.timeline > li:nth-child(even) {
+      float: left;
+      clear: none; }
+  /* line 581, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline .from_to {
+    line-height: 1em; }
+    /* line 583, C:/Sites/career-timeline/source/css/style.scss */
+    #career_timeline .from_to span {
+      font-size: 0.8em; }
+  /* line 587, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline .arrow {
+    display: none; }
+  /* line 591, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline .circle {
+    display: none; }
+
+  /* line 596, C:/Sites/career-timeline/source/css/style.scss */
+  .extra {
+    width: 100%;
+    float: left;
+    margin: 1em 0 0 0; }
+    /* line 600, C:/Sites/career-timeline/source/css/style.scss */
+    .extra h2 {
+      margin: 0 0 0.1em 0; }
+
+  /* line 605, C:/Sites/career-timeline/source/css/style.scss */
+  footer {
+    width: 100%;
+    float: left;
+    margin: 1em 0 0;
+    padding: 1em 0;
+    border-top: 4px solid #e74c3c; } }
+@media print {
+  /* line 622, C:/Sites/career-timeline/source/css/style.scss */
+  header ul {
+    border-top: 4px solid #ccc; }
+    /* line 624, C:/Sites/career-timeline/source/css/style.scss */
+    header ul li {
+      width: 100%;
+      margin-bottom: 1em; }
+    /* line 628, C:/Sites/career-timeline/source/css/style.scss */
+    header ul li:last-child {
+      float: left; }
+
+  /* line 635, C:/Sites/career-timeline/source/css/style.scss */
+  #career_timeline h1 {
+    border-bottom: 1px solid #ccc; }
+
+  /* line 642, C:/Sites/career-timeline/source/css/style.scss */
+  ul.timeline li {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc; }
+
+  /* line 649, C:/Sites/career-timeline/source/css/style.scss */
+  .extra h2 {
+    border-bottom: 1px solid #ccc; }
+
+  /* line 654, C:/Sites/career-timeline/source/css/style.scss */
+  .circle, .arrow {
+    display: none; }
+
+  /* line 658, C:/Sites/career-timeline/source/css/style.scss */
+  footer {
+    display: none; } }

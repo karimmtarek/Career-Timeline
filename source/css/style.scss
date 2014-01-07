@@ -1,0 +1,661 @@
+//bourbon
+@import "bourbon";
+
+//fonts
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,300");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600");
+
+//Entypo pictograms by Daniel Bruce — www.entypo.com | from http://weloveiconfonts.com/
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-weight: normal;
+}
+
+// entypo-cancel
+// entypo-right-open-big
+// entypo-info
+// entypo-mail
+// entypo-phone
+// entypo-mobile
+// entypo-globe
+// entypo-location
+
+
+// variables
+$heading-font: 'Roboto Slab', serif;
+$body-font: 'Open Sans', sans-serif;
+$blue: #34495e;
+$red: #e74c3c;
+$white: #fff;
+
+// extend
+.section_heading{
+    font: normal normal 300 2em/1em $heading-font;
+    background: $blue;
+    color: $white;
+    border-radius: 0.2em;
+    padding: 0.25em 0.3em 0.3em 0.3em;
+}
+
+// reset
+h1, h2, h3, p, ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: $body-font;
+}
+
+// generic
+.pr1{
+    padding-right: 1em;
+}
+.fr{
+    float: right !important;
+}
+
+// start
+
+#wraper{
+    margin: 0 auto;
+    padding: 1em 0 0;
+    width: 960px;
+    position: relative;
+    //background: #C0C0C0;
+    .vline{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+        width: 4px;
+        height: 0px;
+        background: $red;
+        margin-left: -2px;
+    }
+}
+
+header{
+    > div{
+        float: left;
+        width: 100%;
+    }
+    h1{
+        font: normal normal 300 4em/1em $heading-font;
+        color: $blue;
+        // margin: 0 0.25em 0 0;
+        padding: 0;
+        float: left;
+        // display: inline-block;
+        // width: 40%;
+    }
+    p{
+        font: normal normal 300 1em/1.4em $body-font;
+        float: right;
+        // width: 60%;
+        // padding-top: 1em;
+        // display: inline;
+    }
+    ul{
+        width: 100%;
+        float: left;
+        margin: 2em 0 0;
+        padding: 2em 0;
+        border-top: 4px solid $red;
+        li{
+            float: left;
+            // width: 25%;
+            color: $blue;
+            display: block;
+            font-size: 1.3em;
+            font-weight: 300;
+            line-height: 1em;
+            margin-right: 1.8em;
+            position: relative;
+            padding-left: 25px;
+            span{
+                font-size: 1em;
+                line-height: 1em;
+                color: $red;
+                width: 23px;
+                height: 23px;
+                display: inline-block;
+                // overflow: hidden;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+            }
+        }
+        li:last-child{
+            margin-right: 0;
+            float: right;
+        }
+        .email{
+            span{
+
+            }
+        }
+        .phone{
+            span{
+                @include transform(rotate(90deg));
+                font-size: 1.1em;
+            }
+        }
+        .website{
+            span{
+                font-size: 0.9em;
+
+            }
+        }
+        .location{
+            span{
+                font-size: 1.3em;
+                line-height: 0.5em;
+                text-align: right;
+            }
+        }
+        a{
+            color: $blue;
+            text-decoration: none;
+        }
+
+    }
+
+}
+
+#career_timeline{
+    position: relative;
+    h1{
+        @extend .section_heading;
+        margin: 0 0 1em 0;
+    }
+    ul.timeline{
+        float: left;
+        width: 100%;
+        position: relative;
+        > li{
+            width: 47.5%;
+            height: auto;
+            position: relative;
+            margin: 0 0 2em;
+        }
+        > li:nth-child(odd){
+            float: left;
+            clear: right;
+            .arrow{
+                border-left: 10px solid $red;
+                right: -2%;
+            }
+            .circle{
+                right: -7.5%;
+            }
+        }
+        > li:nth-child(even){
+            float: right;
+            clear: left;
+            .arrow{
+                border-right: 10px solid $blue;
+                left: -2%;
+            }
+            .circle{
+                left: -7.4%;
+            }
+        }
+    }
+    .title{
+        background: $blue;
+        color: $white;
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius:  0.5em;
+        float: left;
+        width: 56%;
+        padding: 2%;
+        h2{
+            font-size: 1.2em;
+            font-weight: normal;
+            position: relative;
+            .modalLink{
+                font-size: 0.65em;
+                line-height: 1.45em;
+                color: $white;
+                position: absolute;
+                top: 5px;
+                right: 0;
+                width: 18px;
+                height: 18px;
+                text-align: center;
+                // padding-left: 6px;
+                background: rgba(0, 0, 0, 0.2);
+                border-radius: 1em;
+
+            }
+        }
+        p{
+            font-size: 1em;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+    .from_to{
+        background: $red;
+        color: $white;
+        font-size: 1em;
+        border-top-right-radius: 0.5em;
+        border-bottom-right-radius:  0.5em;
+        float: left;
+        width: 36%;
+        padding: 2%;
+        strong{
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1em;
+            display: block;
+        }
+        span{
+            font-weight: 300;
+            font-style: none;
+            font-size: 0.9em;
+        }
+    }
+    .arrow {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        //border-left: 10px solid $red;
+        position: absolute;
+        top: 20%;
+    }
+
+    .circle{
+        width: 12px;
+        height: 12px;
+        border: 4px solid $red;
+        position: absolute;
+        top:20%;
+        border-radius: 20px;
+        background: $white;
+        z-index: 10;
+    }
+}
+
+.extra{
+        width: 48%;
+        float: left;
+        margin: 2em 0 0 0;
+    h2{
+        @extend .section_heading;
+        margin: 0 0 0.5em 0;
+    }
+    ul{
+        float: left;
+    }
+    li{
+        float: left;
+        width: 47%;
+        padding-left: 3%;
+        font: normal normal 300 1em/1.3em $body-font;
+        margin-bottom: 0.3em;
+        position: relative;
+        span{
+            font-size: 0.95em;
+            line-height: 1em;
+            color: $red;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            height: 20px;
+            display: block;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    float: left;
+    margin: 2em 0 0;
+    padding: 2em 0;
+    border-top: 4px solid $red;
+    p{
+        color: #666;
+        font-size: 0.9em;
+    }
+    a{
+        color: $red;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+
+// MODAL CODE
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.modal {
+  display: none;
+  background: #eee;
+  padding: 1em;
+  overflow: auto;
+  z-index: 1001;
+  position: fixed;
+  width: 400px;
+  min-height: 300px;
+  border-radius: 0.5em;
+  .closeBtn{
+        font-size: 1.2em;
+        line-height: 1.2em;
+        color: $red;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        cursor: pointer;
+        text-align: right;
+        // display: inline-block;
+        // padding-left: 4px;
+        // background: rgba(0, 0, 0, 0.2);
+        // border-radius: 0.5em;
+  }
+  h2{
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+  }
+  h3{
+    padding: 0 0 1em 0;
+    margin-bottom: 0.5em;
+    border-bottom: 4px solid $red;
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+  }
+  p{
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+  }
+  ul{
+    li{
+        width: 94%;
+        font: normal normal 300 0.95em/1.3em $body-font;
+        margin-bottom: 0.3em;
+        padding: 0 3%;
+        position: relative;
+        span{
+            font-size: 0.95em;
+            line-height: 1em;
+            color: $red;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            height: 20px;
+            display: block;
+        }
+    }
+  }
+}
+
+// Media Queries
+
+@media only screen and (max-width: 960px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    #wraper{
+        padding: 3%;
+        width: 94%;
+        position: relative;
+    }
+    header{
+        h1{
+            font-size: 2.9em;
+
+        }
+        p{
+            font-size: 0.8em;
+            line-height: 1.5em;
+
+
+        }
+        ul{
+            width: 100%;
+            float: left;
+            margin: 1em 0 0;
+            padding: 1em 0;
+            border-top: 4px solid $red;
+            li{
+                font-size: 1em;
+                margin-right: 1.2em;
+                padding-left: 20px;
+                span{
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+        }
+    }
+
+    #career_timeline{
+        ul.timeline{
+            > li{
+                width: 47%;
+                margin: 0 0 1em 0;
+            }
+            > li:nth-child(odd){
+                .circle{
+                    right: -9.5%;
+                }
+            }
+            > li:nth-child(even){
+                .circle{
+                    left: -9.2%;
+                }
+            }
+        }
+        .title{
+            width: 60%;
+            padding: 2%;
+            h2{
+                font-size: 1.1em;
+            }
+            p{
+                font-size: 0.9em;
+            }
+        }
+        .from_to{
+            font-size: 0.8em;
+            width: 34%;
+            padding-right: 0;
+            line-height: 1.1em;
+            strong{
+                // font-weight: lighter;
+            }
+            span{
+                font-size: 0.8em;
+                line-height: 1em;
+            }
+        }
+    }
+
+    .extra{
+        width: 48%;
+        float: left;
+        margin: 1em 0 0 0;
+        li{
+            font-size: 0.9em;
+            span{
+                top: 3px;
+            }
+        }
+    }
+    footer{
+        margin: 1em 0 0 0;
+        padding: 1em 0;
+    }
+// end of Media Queries 768
+}
+
+@media only screen and (max-width: 480px) {
+    #wraper{
+        padding: 3%;
+        width: 94%;
+        position: relative;
+        .vline{
+            display: none;
+            }
+    }
+
+    header{
+        h1{
+            float: none;
+            width: 100%;
+        }
+        p{
+            float: none;
+            width: 100% !important;
+            padding-top: 0.5em;
+        }
+        ul{
+
+            float: left;
+            margin: 1em 0 0;
+            padding: 1em 0;
+
+            li{
+                float: none;
+                margin: 0 0 0.8em 0;
+            }
+            li:last-child{
+                margin: 0;
+                float: none;
+            }
+            .location{
+                span{
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    #career_timeline{
+        h1{
+            margin: 0 0 0.5em 0;
+        }
+        ul.timeline{
+            float: left;
+            width: 100%;
+            > li{
+                width: 100%;
+                height: auto;
+                margin: 0 0 1em 0;
+            }
+            > li:nth-child(odd){
+                float: left;
+                clear: none;
+            }
+            > li:nth-child(even){
+                float: left;
+                clear: none;
+            }
+        }
+        .from_to{
+            line-height: 1em;
+            span{
+                font-size: 0.8em;
+            }
+        }
+        .arrow {
+            display: none;
+        }
+
+        .circle{
+            display: none;
+        }
+    }
+
+    .extra{
+        width: 100%;
+        float: left;
+        margin: 1em 0 0 0;
+        h2 {
+            margin: 0 0 0.1em 0;
+        }
+    }
+
+    footer{
+        width: 100%;
+        float: left;
+        margin: 1em 0 0;
+        padding: 1em 0;
+        border-top: 4px solid $red;
+    }
+// end of Media Queries 480
+}
+
+//font short-hand
+//font: font-style font-variant font-weight font-size/line-height font-family;
+
+
+@media print
+{
+    header{
+         ul{
+            border-top: 4px solid #ccc;
+                li{
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+                li:last-child{
+                    float: left;
+                }
+            }
+    }
+
+    #career_timeline{
+        h1{
+            // padding-bottom: 1em;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    ul.timeline{
+        li{
+            padding-bottom: 1em;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    .extra{
+        h2 {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    .circle, .arrow{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+}

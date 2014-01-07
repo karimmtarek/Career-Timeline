@@ -1,0 +1,173 @@
+#################
+# Personal Info #
+#################
+personal_info:
+  - name: "Karim tarek"#"Thomas Marzano"#
+  - bio: "I'm a web UI designer/ fron-end developer, a problem solver who always loves a challenge and enjoys working on precise &amp; detailed projects."
+  - email: "karim@karimtarek.com"
+  - phone: "+1 514 000 0000"
+  - website: "www.karimtarek.com"
+  - website_url: "//karimtarek.com"
+  - city: "Montreal, Canada"
+
+############
+# Sections #
+############
+resume_sections:
+  - section: "Career Timeline"
+  - section: "Skillset"
+  - section: "Toolbox"
+
+###################
+# Career Timeline #
+###################
+career_timeline:
+  - milestone: #00
+      - title: "Front-end Developer"
+      - company: "at ALDO Group (aldogroup.com)"
+      - city: "Montreal, Canada."
+      - period: "Oct 2013 - Present"
+      - job_brief: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque tincidunt elit id posuere."
+      - job_description:
+        - Etiam posuere diam ac turpis lacinia molestie.
+        - Donec rutrum lorem condimentum velit lobortis placerat.
+        - Pellentesque scelerisque arcu eu leo tincidunt, id accumsan lacus molestie.
+        - Donec congue quam nec ligula tempus, sed porttitor lectus ornare.
+        - Fusce sed libero quis augue consectetur tincidunt.
+  - milestone: #01
+      - title: "Freelance Web UI Designer &amp; Developer"
+      - company: "at Web Cream (webcream.ca)"
+      - city: "Montreal, Canada."
+      - period: "Feb 2013 - Oct 2013"
+      - job_brief: "job brief"
+      - job_description:
+        - description 1
+        - description 2
+        - description 3
+        - description 4
+        - description 5
+  - milestone: #02
+      - title: "Comprehensive Project Management Course"
+      - company: "at School of continuing studies, McGill University."
+      - city: "Montreal, Canada."
+      - period: "Sep 2012 - Mar 2013"
+      - job_brief: "job brief"
+      - job_description:
+        - description 1
+        - description 2
+        - description 3
+        - description 4
+        - description 5
+  - milestone: #03
+      - title: "Webmaster"
+      - company: "at Doctors Without Borders, Middle East regional office (msf-me.org)"
+      - city: "Abu Dhabi, UAE."
+      - period: "Dec 2009 - Jun 2012"
+      - job_brief: "job brief"
+      - job_description:
+        - description 1
+        - description 2
+        - description 3
+        - description 4
+        - description 5
+  - milestone: #04
+      - title: "Web UI Designer &amp; Developer"
+      - company: "at Omnia (omnia.ae)"
+      - city: "Dubai, UAE."
+      - period: "Dec 2008 - Dec 2009"
+      - job_brief: "job brief"
+      - job_description:
+        - description 1
+        - description 2
+        - description 3
+        - description 4
+        - description 5
+  - milestone: #05
+      - title: "Front-end Developer"
+      - company: "at Catch Interactive"
+      - city: "Dubai, UAE."
+      - period: "Jan 2008 - Dec 2008"
+      - job_brief: "job brief"
+      - job_description:
+        - description 1
+        - description 2
+        - description 3
+        - description 4
+        - description 5
+  - milestone: #06
+      - title: "CIW Professional Certification"
+      - company: "at ciwcertified.com"
+      - city: "-"
+      - period: "Oct 2007"
+      - job_brief: ""
+      - job_description: ""
+  - milestone: #07
+      - title: "Web Designer"
+      - company: "at Victory Link (victorylink.com)"
+      - city: "Cairo, Egypt."
+      - period: "Sep 2005 - Oct 2007"
+      - job_brief: ""
+      - job_description: ""
+  - milestone: #08
+      - title: "B.Sc., Computer Engineering"
+      - company: "at AIET"
+      - city: "Alexandria, Egypt."
+      - period: "Aug 2005"
+      - job_brief: ""
+      - job_description: ""
+
+############
+# Skillset #
+############
+skillset:
+  - Responsive Web Design
+  - UI/UX Design
+  - UI Development
+  - Information Architecture
+  - Prototyping
+  - Project Managment
+  - CMS Management
+  - Email List Managment
+  - Web Hosting Managment
+  - SEO
+
+###########
+# Toolbox #
+###########
+toolbox:
+  - Adobe Photoshop
+  - Adobe Illustrator
+  - Adobe  Dreamweaver
+  - Aptana Studio
+  - HTML, CSS, jQuery
+  - WordPress
+  - Bootstrap
+  - WAMP
+  - Plesk, cPanel
+  - Filezilla
+
+###########################
+# Carrer timeline Toolbox #
+###########################
+carrer_timeline_Toolbox:
+  - tool:
+    - name: "Middleman, "
+    - url: "http://middlemanapp.com/"
+  - tool:
+    - name: "HTML5 Boilerplate, "
+    - url: "http://html5boilerplate.com/"
+  - tool:
+    - name: "SASS, "
+    - url: "http://sass-lang.com/"
+  - tool:
+    - name: "Bourbon, "
+    - url: "http://bourbon.io/"
+  - tool:
+    - name: "jQuery, "
+    - url: "http://jquery.com/"
+  - tool:
+    - name: "Pop Easy, "
+    - url: "http://thomasgrauer.com/popeasy/"
+  - tool:
+    - name: "Entypo pictograms."
+    - url: "http://www.entypo.com/"
